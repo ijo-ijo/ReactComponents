@@ -1,2 +1,10 @@
-# ReactComponents
-React Components
+# React Teaxtarea component
+React Textarea Component
+
+# Usage
+
+Usage ...
+
+# Dependencies
+
+Dependencies
