@@ -1,0 +1,97 @@
+@border-radius: 2px;
+@textareacomponent-border-color: #dde0e6;
+@textareacomponent-border-color-focus: #428dd3;
+@textareacomponent-border-color-mouseover:#afafaf;
+@textareacomponent-border-color-readonly:#e2e4e9;
+@textareacomponent-border-color-disabled:#e4e6eb;
+
+.textarea-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    margin: 0 auto 5px;
+    position: relative;
+    border:solid 1px;
+    border-color: @textareacomponent-border-color;
+    -webkit-border-radius: @border-radius;
+    -moz-border-radius: @border-radius;
+    border-radius: @border-radius;
+
+    textarea:focus, input:focus, *:focus{
+        outline: none;
+    }
+
+    ::-moz-placeholder{
+        color: #a8a2a2;
+    }
+
+    ::-webkit-input-placeholder{
+        color: #a8a2a2;
+    }
+
+    :-ms-input-placeholder{
+        color: #a8a2a2;
+    }
+
+    .textarea-button-icon{
+        cursor: pointer;
+        width: 12px;
+        height: 12px;
+        padding: 0;
+        margin: 0;
+        background-color: #0000;
+        border: 0;
+        position: absolute;
+    }
+    .textarea-button-icon-toggler{
+        right: 20px;
+	    top: 7px;
+    }
+    .textarea-state-icon{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 6px;
+        top: 4px;
+    }
+
+    input[type="text"],textarea{
+        border: 0 none;
+        color:#212324;
+        display: block;
+        margin: 0;
+        width: 100%;
+        padding: 5px 7px 6px 7px;
+        font: 500 11px/11px Arial;
+    }
+    textarea{
+        min-height: 96px;
+    }
+}
+.textarea-container.textarea-expanded{
+    .textarea-button-icon-eraser{
+        top:25px;
+        right: 16px;
+    }
+}
+.textarea-container.textarea-collapsed{
+    .textarea-button-icon-eraser{
+        top:7px;
+        right: 38px;
+    }
+}
+.textarea-container.textarea-mouseover{
+    border-color:@textareacomponent-border-color-mouseover;
+}
+.textarea-container.textarea-focus{
+    border-color: @textareacomponent-border-color-focus;
+}
+.textarea-container.textarea-readonly{
+    border-color: @textareacomponent-border-color-readonly;
+}
+.textarea-container.textarea-disabled{
+    border-color: @textareacomponent-border-color-disabled;
+}
