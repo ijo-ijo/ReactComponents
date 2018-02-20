@@ -32,4 +32,4 @@ ReactDOM.render(<Textarea className="style3" placeholder="Enter text 3..." disab
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/ijo-ijo/ReactComponents/blob/Textareacomponent/LICENSE) file for details
